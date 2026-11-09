@@ -1,0 +1,263 @@
+/* GENERAL STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: #d63384;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo h1 {
+    font-size: 30px;
+}
+
+.logo p {
+    font-style: italic;
+}
+
+/* NAVIGATION */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd6e8;
+}
+
+/* HOME SECTION */
+.hero {
+    background: linear-gradient(
+        rgba(214, 51, 132, 0.6),
+        rgba(214, 51, 132, 0.6)
+    ),
+    url("images/salon.jpg");
+
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+    padding: 40px;
+}
+
+.hero-content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 25px;
+}
+
+/* BUTTONS */
+.button {
+    display: inline-block;
+    background-color: #d63384;
+    color: white;
+    padding: 12px 25px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #a61e63;
+    transform: translateY(-3px);
+}
+
+/* SECTIONS */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #d63384;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+section p {
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+/* SERVICES */
+.service-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.service-card {
+    background-color: white;
+    width: 280px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.service-card h3 {
+    color: #d63384;
+    margin-top: 15px;
+}
+
+/* GALLERY */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.gallery-container img {
+    width: 280px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+/* OFFERS */
+.offer-card {
+    background-color: white;
+    max-width: 500px;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.offer-card h3 {
+    color: #d63384;
+    margin-bottom: 15px;
+}
+
+/* CONTACT */
+#contact {
+    background-color: #ffe0ed;
+}
+
+/* FOOTER */
+footer {
+    background-color: #d63384;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 10px;
+}
+
+/* BACK TO TOP */
+#backToTop {
+    background-color: white;
+    color: #d63384;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+#backToTop:hover {
+    background-color: #ffd6e8;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .hero {
+        padding: 25px;
+    }
+
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card,
+    .gallery-container img {
+        width: 90%;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+}
+

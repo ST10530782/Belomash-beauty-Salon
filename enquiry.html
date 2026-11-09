@@ -1,0 +1,197 @@
+html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Enquiry | Belomash Beauty Salon</title>
+
+    <meta name="description"
+
+        content="Send an enquiry to Belomash Beauty Salon about our beauty treatments and services.">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>Belomash Beauty Salon</h1>
+
+        <p>Your Beauty, Our Passion</p>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about.html">About Us</a></li>
+
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="gallery.html">Gallery</a></li>
+
+                <li><a href="offers.html">Offers</a></li>
+
+                <li><a href="contact.html">Contact Us</a></li>
+
+                <li><a href="enquiry.html">Enquiry</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Enquiry Form -->
+
+    <main>
+
+        <section id="enquiry">
+
+            <h2>Beauty Treatment Enquiry</h2>
+
+            <p>
+
+                Please complete the form below to enquire
+
+                about our beauty treatments.
+
+            </p>
+
+            <form id="enquiryForm">
+
+                <label for="fullname">Full Name:</label>
+
+                <input type="text"
+
+                       id="fullname"
+
+                       name="fullname"
+
+                       placeholder="Enter your full name"
+
+                       required>
+
+                <label for="email">Email Address:</label>
+
+                <input type="email"
+
+                       id="email"
+
+                       name="email"
+
+                       placeholder="Enter your email"
+
+                       required>
+
+                <label for="phone">Phone Number:</label>
+
+                <input type="tel"
+
+                       id="phone"
+
+                       name="phone"
+
+                       placeholder="Enter your phone number"
+
+                       required>
+
+                <label for="service">Beauty Service:</label>
+
+                <select id="service"
+
+                        name="service"
+
+                        required>
+
+                    <option value="">Select a service</option>
+
+                    <option value="Facials">Facials</option>
+
+                    <option value="Lash Treatments">
+
+                        Lash Treatments
+
+                    </option>
+
+                    <option value="Waxing">Waxing</option>
+
+                    <option value="Skincare">
+
+                        Skincare
+
+                    </option>
+
+                    <option value="Other">Other</option>
+
+                </select>
+
+                <label for="date">Preferred Appointment Date:</label>
+
+                <input type="date"
+
+                       id="date"
+
+                       name="date"
+
+                       required>
+
+                <label for="message">Your Enquiry:</label>
+
+                <textarea id="message"
+
+                          name="message"
+
+                          rows="5"
+
+                          placeholder="Write your enquiry here"
+
+                          required></textarea>
+
+                <button type="submit" class="button">
+
+                    Submit Enquiry
+
+                </button>
+
+            </form>
+
+            <p id="formMessage"></p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            &copy; 2026 Belomash Beauty Salon.
+
+            All Rights Reserved.
+
+        </p>
+
+        <button id="backToTop">
+
+            Back to Top ↑
+
+        </button>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
